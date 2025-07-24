@@ -2,14 +2,14 @@
 
 
 
-[![Live Demo](https://img.shields.io/badge/demo-announce.org.in-blue.svg)](https://announce.org.in)
+[![Live Demo](https://img.shields.io/badge/demo-announce.org.in-blue.svg)](https://announce-murex.vercel.app/)
 [![GitHub](https://img.shields.io/github/license/David-patrick-chuks/announce)](https://github.com/David-patrick-chuks/announce/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/David-patrick-chuks/announce?style=social)](https://github.com/David-patrick-chuks/announce/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/David-patrick-chuks/announce?style=social)](https://github.com/David-patrick-chuks/announce/network/members)
 
 
 <div align="center">
-  <img src="asset/hero.png" alt="Announce Hero" width="600">
+<!--   <img src="asset/hero.png" alt="Announce Hero" width="600"> -->
 </div>
 A modern platform that makes government announcements and circulars accessible to everyone by translating bureaucratic language into simple, understandable text in 11+ regional languages
 
