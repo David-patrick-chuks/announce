@@ -70,10 +70,7 @@ The platform uses a distributed architecture with the following components:
 ### Platform Overview
 The Announce platform provides a clean, modern interface for accessing government announcements with AI-powered translations and summaries.
 
-| View Type | Screenshots |
-|-----------|-------------|
-| **Announcement View** | ![Announcement View](asset/filter.png) |
-| **Detail View** | ![Top Detail](asset/topdetail.png) ![Bottom Detail](asset/bottomdetail.png) |
+
 
 ## Quick Start
 
@@ -133,6 +130,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 - **GitHub**: [David-patrick-chuks](https://github.com/David-patrick-chuks/announce)
-- **Email**: jesikamaraj@gmail.com
-- **Twitter**: [@kvnn22](https://x.com/kvnn22)
-- **Website**: [announce.ng](https://announce.ng)
+
