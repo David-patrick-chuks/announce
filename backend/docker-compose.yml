@@ -1,0 +1,45 @@
+services:
+  # Django web application
+  web:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${PORT}:${PORT}"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: gunicorn api.wsgi:application -c gunicorn.conf.py
+
+  # Celery worker
+  celery-worker:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - ${SECRETS_DIR}:/secrets:ro
+    command: celery -A api worker --concurrency=4 -E
+
+  # Celery beat scheduler
+  celery-beat:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: celery -A api beat
+
+  # Flower - Celery monitoring tool
+  flower:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "5555:5555"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: celery -A api flower --port=5555 --address=0.0.0.0 --basic_auth=admin:123456

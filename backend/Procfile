@@ -1,0 +1,4 @@
+web: gunicorn api.wsgi:application -c gunicorn.conf.py
+worker: celery -A api worker --loglevel=warning --concurrency=4 -E
+beat: celery -A api beat --loglevel=warning
+flower: celery -A api flower --port=5555 --address=0.0.0.0 --basic_auth=admin:123456 --loglevel=warning
